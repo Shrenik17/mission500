@@ -1,0 +1,10 @@
+Light Blue - #50bac3
+Red - #990230
+Light Red - #e36955
+Blue - #249bc4
+Light Yellow - #f1ae44
+
+
+<i className="fa fa-group fa-flip" style="--fa-animation-duration: 10s" aria-hidden="true">
+::before
+</i>
