@@ -22,7 +22,7 @@ const HomePage = () => {
       <NavOne />
       <SliderOne />
       <ServiceArea />
-      <div className="d-flex justify-content-center m-5">
+      <div className="d-flex justify-content-center m-2">
         <div className="entry-video-img">
           <div className="video-responsive">
             <div className="col-md-12">
