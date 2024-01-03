@@ -39,7 +39,7 @@ const AboutUs = () => {
     <>
     <section className="mission-vision-section">
         <div className="container">
-          <div className="row mt-2 mb-5 text-center" style={{textWrap: "balance"}}>
+          <div className="row mt-2" >
             <div className="col">
               <p>
                 Mission is a people's movement for water conservation started by
@@ -55,17 +55,7 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="container mb-5">
-        <div className="d-flex" style={{ padding: "1rem 0" }}>
-          {/* <div
-            className="px-3"
-            style={{ fontSize: "28px", alignSelf: "center" }}
-          >
-            <i class="fa fa-eye" aria-hidden="true"></i>
-          </div> */}
-          <h1 style={{ fontWeight: "600", fontSize: "35px" }}>
-            Our Philosophy
-          </h1>
-        </div>
+      
         {aboutDetails.map((item, index) => {
           return (
             <div key={index}>

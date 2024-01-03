@@ -43,26 +43,27 @@ const HiwArea = () => {
               </div>
             </div>
           </div>
-          <div className="row">
-            <h4
+          <div
               style={{
                 border: "1px solid #ccc",
                 padding: "15px",
                 margin: "10px",
                 borderRadius: "10px",
-              }}
-            >
+                color: "#818181"
+              }}>
+            
               <a
                 href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: "#818181"}}
               >
                 Mission 500 is working towards the fulfilment of Sustainable
                 Development Goals (SDGs) which were adopted by the United
                 Nations in the year 2015, providing a blueprint to achieve a
                 better and more sustainable future for all.
               </a>
-            </h4>
+            
             <br />
             <br />
           </div>

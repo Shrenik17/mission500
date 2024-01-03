@@ -88,10 +88,10 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700");
-
+@import url("../fonts/Bookman\ Old\ Style\ Regular.ttf");
 body {
-  font-family: "Libre Baskerville", serif;
-  font-size: 16px;
+  font-family: "Bookman Old Style";
+  font-size: 17px;
   line-height: 26px;
   color: #818181;
   font-weight: 400;
@@ -106,7 +106,7 @@ h5,
 h6 {
   margin: 0;
   color: #007bff;
-  font-family: "Playfair Display", serif;
+  font-family: "Bookman Old Style";
 }
 p {
   margin: 0;
@@ -134,7 +134,7 @@ a:hover {
  =============================*/
 /*=== ostion-btn ===*/
 .theme-btn {
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   background: #e36955;
   color: #fff;
@@ -185,7 +185,7 @@ a:hover {
 /*=== section-heading ====*/
 .section-heading .section__title {
   font-size: 50px;
-  line-height: 60px;
+  line-height: 55px;
   font-weight: 700;
 }
 .section-heading .section__meta {
@@ -1577,7 +1577,7 @@ a:hover {
 }
 .skill-area .skills .skill span:last-of-type {
   float: right;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
 }
 .skill-area .skills .skill .progress_bg {
   background-color: #ffffff;
@@ -2344,7 +2344,7 @@ a:hover {
   font-size: 170px;
   height: 50px;
   line-height: 110px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
   margin-bottom: 40px;
   margin-left: -7px;
 }
@@ -3383,7 +3383,7 @@ a:hover {
   .comment__date {
   color: #e36955;
   font-size: 12px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bookman Old Style";
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-left: 10px;
@@ -3511,7 +3511,7 @@ a:hover {
   color: #249bc4;
   font-weight: 600;
   font-size: 22px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__title {
   font-size: 18px;
@@ -3524,7 +3524,7 @@ a:hover {
   margin-bottom: 10px;
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__title2 span {
-  font-family: "Poppins", sans-serif;
+  font-family: "Bookman Old Style";
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 12px;
@@ -3776,7 +3776,7 @@ a:hover {
   .date__num-text {
   font-size: 40px;
   line-height: 35px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
 }
 .upcoming-event-area
   .blog-content-wrap
@@ -3956,7 +3956,7 @@ a:hover {
   .date__num-text {
   font-size: 40px;
   line-height: 35px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
 }
 .event-detail-area
   .blog-content
@@ -4234,7 +4234,7 @@ a:hover {
   font-size: 20px;
   font-weight: 600;
   margin-right: 6px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
   color: #424242;
 }
 .news-detail-area
@@ -4961,7 +4961,7 @@ a:hover {
   font-size: 36px;
   color: #249bc4;
   font-weight: 800;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
 }
 .package-area
   .package-price-wrap
@@ -5705,7 +5705,7 @@ a:hover {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 30px;
-  font-family: "fontAwesome";
+  font-family: "Bookman Old Style";
   font-size: 14px;
   color: #818181;
   pointer-events: none;
@@ -5894,7 +5894,7 @@ a:hover {
   padding-left: 80px;
   color: #fff;
   font-size: 50px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
   font-weight: 800;
 }
 .donate-area2
@@ -5909,7 +5909,7 @@ a:hover {
   left: 30px;
   color: #fff;
   font-size: 70px;
-  font-family: "Playfair Display", sans-serif;
+  font-family: "Bookman Old Style";
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -6218,7 +6218,7 @@ a:hover {
 .footer-area .footer-widget-wrap .footer-item p,
 .footer-area .footer-widget-wrap .footer-item ul li {
   color: #bfbfbf;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 38px;
   font-weight: 400;
   position: relative;
@@ -6362,7 +6362,7 @@ a:hover {
   padding-bottom: 45px;
 }
 .footer-area .footer-copyright .copyright-desc {
-  font-size: 16px;
+  font-size: 17px;
   color: #bfbfbf;
 }
 .footer-area .footer-copyright .copyright-desc a {
@@ -6437,7 +6437,7 @@ html {
 }
 
 .ac > .ac-q {
-  font-family: "Playfair Display", serif;
+  font-family: "Bookman Old Style";
   color: #232323;
   width: 100%;
   margin: 0;
@@ -6704,8 +6704,8 @@ html {
 }
 .summery_table_heading td {
   font-weight: 300;
-  font-size: 13px;
-  width: 280px;
+  font-size: 15px;
+  text-align: justify;
   
 }
 .summery_border{
@@ -6916,14 +6916,15 @@ html {
 
 /* LineChart.css */
 
-Chart_body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+.Linechart_container{
+  border: 1.5px solid black;
+  border-radius: 10px;
+  margin: 1rem auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
 }
-
 canvas {
   max-width: 600px;
   margin: 20px auto;

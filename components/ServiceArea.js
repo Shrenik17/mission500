@@ -126,6 +126,7 @@ const ServiceArea = () => {
                     color: "#007bff",
                     fontWeight: 600,
                     fontSize: "20px",
+                    textAlign: "justify", 
                   }}
                 >
                   Years
@@ -141,8 +142,7 @@ const ServiceArea = () => {
                   }}
                   onClick={() => {
                     handleYearClick(item.YEAR);
-                    setSelectedItem(item.YEAR);
-                    scrollToMaps();
+
                   }}
                 >
                   <a
@@ -214,7 +214,7 @@ const ServiceArea = () => {
                 >
                   ▪
                 </span>
-                Farm Con(Rs.)
+                Farmer Contribution(Rs.)
               </td>
               {data.map((item, index) => (
                 <td
@@ -236,7 +236,7 @@ const ServiceArea = () => {
                 >
                   ▪
                 </span>
-                Spo Count(Rs.)
+                Sponser Contribution(Rs.)
               </td>
               {data.map((item, index) => (
                 <td

@@ -102,13 +102,11 @@ class Footer extends Component {
                     </li>
                     {/* <li><Link href="#">Site Map</Link></li> */}
                     <li>
-                
                       <Link href="files/Privacy.pdf" target="_blank">
                         Privacy Policy
                       </Link>
                     </li>
                     <li>
-              
                       <Link href="/files/Terms.pdf" target="_blank">
                         Terms Of Use
                       </Link>
@@ -128,7 +126,7 @@ class Footer extends Component {
                       </a>
                     </li>
                     <li>
-                      <Link href="/executionMap">Execution Map</Link>
+                      <Link href="/about/executionMap">Execution Map</Link>
                     </li>
                     {/* <li><Link href="#">Blog Posts</Link></li> */}
                     {/* <li><Link href="#">Results</Link></li> */}
@@ -159,8 +157,13 @@ class Footer extends Component {
                   <h3 className="widget__title">contact Us</h3>
                   <ul className="contact__info">
                     {/* <li>Address to be written here!</li> */}
-                    <li style={{textDecorationLine:"underline" ,textDecorationColor: "green"}}>
-                    Dhamangaon Village,Chalisgaon Taluka,District- Jalgaon
+                    <li
+                      style={{
+                        textDecorationLine: "underline",
+                        textDecorationColor: "green",
+                      }}
+                    >
+                      Dhamangaon Village,Chalisgaon Taluka,District- Jalgaon
                     </li>
                     <li>
                       <Link href="mailto:info@mission500mh.com">
@@ -168,7 +171,9 @@ class Footer extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link href="tel:+91-9763469063">+91-9763469063</Link>
+                      <Link href="tel:+91-9763469063">
+                        Shekhar Nimbalkar (9763469063)
+                      </Link>
                     </li>
                   </ul>
                   <div className="footer__social">
@@ -180,6 +185,7 @@ class Footer extends Component {
                           rel="noopener noreferrer"
                         >
                           <i className="fa fa-twitter"></i>
+                          {/* <img src="/images/twitter_logo.png" alt="" /> */}
                         </Link>
                       </li>
                       <li>

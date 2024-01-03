@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="Mission 500 | About">
       <NavOne />
-      <PageHeader title="About" />
+      <PageHeader title="Our Philosophy" />
       <AboutUs />
       <Footer />
     </Layout>

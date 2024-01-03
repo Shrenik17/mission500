@@ -26,7 +26,7 @@ class MixerArea extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                  <h3 style={{ color: "gold" }} className="funslide__text">
+                  <h3 style={{ color: "antiquewhite" }} className="funslide__text">
                     Your dedication to water conservation and tree planting is
                     inspiring change on a remarkable scale. Every drop saved and
                     tree planted nurtures a brighter, greener future. Your

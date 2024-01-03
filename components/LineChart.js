@@ -16,8 +16,8 @@ const LineChart = ({ data }) => {
      
       NUMBER_OF_VILLAGES: "Villages Count",
       NO_OF_HOURS: "Invested Hours",
-      CONTRIBUTION_BY_FARMERS: "Farm Con(Rs.)",
-      CONTRIBUTION_FROM_SPONSER:"Spo Count(Rs.)",
+      CONTRIBUTION_BY_FARMERS: "Farmer Contribution(Rs.)",
+      CONTRIBUTION_FROM_SPONSER:"Sponser Contribution(Rs.)",
       RESERVOIR_CREATED_IN_CRORE_LITRE: "Reservoir (Cr. Ltr)",
       
     };
@@ -30,36 +30,52 @@ const LineChart = ({ data }) => {
           borderWidth: 1, 
           data: chartData.map((entry) => entry[field]),
           fill: false,
+      
+         
         },
       ],
     };
   };
 
   const options = {
+    devicePixelRatio:3,
     scales: {
       x: [
         {
-          type: "linear", 
-          position: "bottom", 
+          type: "linear",
+          position: "bottom",
           ticks: {
             beginAtZero: true,
           },
         },
       ],
-      
+      y: [
+        {
+          display: false,
+        },
+      ],
     },
     plugins: {
+      legend: {
+        onClick: null, 
+        labels: {
+          font: {
+            weight: 'bold' 
+          }
+        }
+      },
       tooltip: {
         callbacks: {
           label: (context) => +context.parsed.y,
         },
       },
-      y: false,
     },
   };
 
+
   return (
-    <div className="container" style={{ display: "flex", flexWrap: "wrap" }}>
+    
+    <div className="Linechart_container">
     {chartData &&
       Object.keys(chartData[0])
         .filter((field) => !excludedFields.includes(field))
@@ -68,13 +84,19 @@ const LineChart = ({ data }) => {
                 minWidth: "300px",
                 margin: "10px",
                 textAlign: "center",
-                marginBottom: index < 3 ? "20px" : "0", }}>
+                marginBottom: index < 3 ? "20px" : "0", 
+                // border: "1px solid #ddd", 
+                // borderRadius: "5px",
+                boxShadow: "0 4px 8px rgba(0,0,0,0.1)", 
+                // padding: "10px",
+                }}>
           
-            <Line data={generateChartData(field)} options={options} />
+            <Line  data={generateChartData(field)} options={options} />
             <hr />
           </div>
         ))}
-  </div>
+        </div>
+ 
 );
 };
 
