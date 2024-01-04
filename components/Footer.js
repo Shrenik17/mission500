@@ -184,8 +184,8 @@ class Footer extends Component {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <i className="fa fa-twitter"></i>
-                          {/* <img src="/images/twitter_logo.png" alt="" /> */}
+                          {/* <i className="fa fa-twitter"></i> */}
+                          <img style={{height:"15px"}} src="/images/twitter_logo.png" alt="twitter logo" />
                         </Link>
                       </li>
                       <li>

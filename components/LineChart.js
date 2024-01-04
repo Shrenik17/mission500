@@ -87,7 +87,7 @@ const LineChart = ({ data }) => {
                 marginBottom: index < 3 ? "20px" : "0", 
                 // border: "1px solid #ddd", 
                 // borderRadius: "5px",
-                boxShadow: "0 4px 8px rgba(0,0,0,0.1)", 
+                boxShadow: "0 5px 20px rgba(0,0,0,0.1)", 
                 // padding: "10px",
                 }}>
           

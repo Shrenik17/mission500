@@ -8,17 +8,16 @@ import LineChart from "@/components/LineChart";
 const SummeryTable = () => {
   const [selectedYear, setSelectedYear] = useState(null);
   const [selectedItem, setSelectedItem] = useState(null);
-  
+
   useEffect(() => {
     // Set the default selected year to the last year in the data array
     const lastYear = data[data.length - 1].YEAR;
     setSelectedYear(lastYear);
-  
   }, []);
 
   const handleYearClick = (year) => {
     setSelectedYear(year);
- 
+
     // setSelectedItem(year);
   };
 
@@ -32,6 +31,19 @@ const SummeryTable = () => {
   const handleClick = (item) => {
     handleYearClick(item.YEAR);
     setSelectedItem(item.YEAR);
+  };
+  // Add your logic to return the link for each year
+  const getYearLink = (year) => {
+    switch (year) {
+      case 2022:
+        return "https://mission500mh.com/2022-Projects";
+      case 2021:
+        return "https://mission500mh.com/2020-21-Projects";
+      case 2023:
+        return "https://mission500mh.com/projects?district=all_districts";
+      default:
+        return "#";
+    }
   };
 
   return (
@@ -185,7 +197,8 @@ const SummeryTable = () => {
                       }}
                     >
                       <a
-                        href={`https://mission500mh.com/${item.YEAR}-Projects`}
+                        // href={`https://mission500mh.com/${item.YEAR}-Projects`}
+                        href={getYearLink(item.YEAR)}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ cursor: "pointer" }}
@@ -312,68 +325,7 @@ const SummeryTable = () => {
           </div>
         </div>
         <LineChart data={data} />
-        {/* 
-        <section
-          className="d-flex justify-content-around"
-          style={{ paddingTop: "0rem" }}
-        >
-          <div className="col-md-2">
-            <div
-              className="p-4 border border-2 border-grey rounded-3"
-              style={{
-                border: "2px solid grey",
-                borderRadius: "12px",
-                height: "fit-content",
-                marginTop: "45px",
-              }}
-            >
-              {data.map((item, index) => (
-                <ul className="d-flex justify-content-evenly" key={index}>
-                  <li
-                    onClick={() => handleClick(item)}
-                    style={{
-                      cursor: "pointer",
-                      fontWeight:
-                        selectedItem === item.YEAR ? "bold" : "normal",
-                      fontSize: selectedItem === item.YEAR && "18px",
-                    }}
-                  >
-                    - {item.YEAR}
-                  </li>
-                </ul>
-              ))}
-            </div>
-          </div>
 
-          <div className="col-md-8">
-            <div className="d-flex p-4 justify-content-end">
-              <div>
-                <p className="mt-3">Year {selectedYear}</p>
-              </div>
-              {selectedYear && selectedYear == 2023 ? (
-                <Image src="/images/map_23.svg" width={700} height={500} />
-              ) : selectedYear == 2022 ? (
-                <Image src="/images/map_22.svg" width={700} height={500} />
-              ) : selectedYear == 2021 ? (
-                <Image src="/images/map_21.svg" width={700} height={500} />
-              ) : selectedYear == 2020 ||
-                selectedYear == 2019 ||
-                selectedYear == 2018 ? (
-                <Image
-                  src="/images/map_18_19_20.svg"
-                  width={700}
-                  height={500}
-                />
-              ) : (
-                "/"
-              )}
-            </div>
-            <p className="mb-5" style={{ color: "#818181", maxWidth: "100%" }}>
-              Government of Maharashtra has renamed ‘Aurangabad’ district as
-              ‘Chhatrapati Sambhajinagar’ and ‘Osmanabad’ as ‘Dharashiv’.
-            </p>
-          </div>
-        </section> */}
         <section
           className="d-flex flex-column flex-md-row justify-content-around align-items-center"
           style={{ paddingTop: "0rem" }}
