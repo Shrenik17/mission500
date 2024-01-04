@@ -104,7 +104,7 @@ const Education = () => {
                             </Link>
 
                             <div className="card-body">
-                              <h5>{project.title}</h5>
+                              <h5 style={{fontWeight:400}} >{project.title}</h5>
                               {expanded ? (
                                 <p>{project.shortDesc}</p>
                               ) : (

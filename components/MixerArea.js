@@ -26,7 +26,7 @@ class MixerArea extends Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                  <h3 style={{ color: "antiquewhite" }} className="funslide__text">
+                  <h5 style={{ color: "antiquewhite" , fontWeight:"400" }} className="funslide__text">
                     Your dedication to water conservation and tree planting is
                     inspiring change on a remarkable scale. Every drop saved and
                     tree planted nurtures a brighter, greener future. Your
@@ -37,8 +37,8 @@ class MixerArea extends Component {
                     <br />
                     Together, we're writing a story of hope, resilience, and
                     sustainable abundance. Keep nurturing the Earth; your
-                    contributions matter immensely."
-                  </h3>
+                    contributions matter immensely.
+                  </h5>
                   {/* <Link href="/contact" className="theme-btn">
                     Join Us
                   </Link> */}

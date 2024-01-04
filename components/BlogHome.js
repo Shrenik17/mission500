@@ -58,7 +58,7 @@ const BlogHome = () => {
   return (
     <>
       {blogData && otherBlogData ? (
-        <div className="row" style={{ position: "relative" }}>
+        <div className="row" style={{ position: "relative", fontWeight:"400" }}>
           {responseType == "true" && (
             <div className="col-md-8">
               <div className="d-flex flex-column container pt-4">
@@ -68,6 +68,7 @@ const BlogHome = () => {
                       paddingBottom: "1rem",
                       color: "#e36955",
                       lineHeight: "40px",
+                      fontWeight:"400"
                     }}
                   >
                     {(blogData && blogData.blogHeading) ||
@@ -77,12 +78,12 @@ const BlogHome = () => {
                   <div
                     style={{ display: "flex", justifyContent: "space-between" }}
                   >
-                    <h6 style={{ padding: "0 2rem", color: "black" }}>
+                    <h6 style={{ padding: "0 2rem", color: "black" , fontWeight:"400"}}>
                       Date -{" "}
                       {(blogData && blogData.postedDate) ||
                         blogData.data.postedDate}
                     </h6>
-                    <h6 style={{ padding: "0 2rem", color: "black" }}>
+                    <h6 style={{ padding: "0 2rem", color: "black" , fontWeight:"400" }}>
                       Written By -{" "}
                       {(blogData && blogData.writtenBy) ||
                         blogData.data.writtenBy}
@@ -110,7 +111,7 @@ const BlogHome = () => {
                   style={{ position: "sticky", top: "0" }}
                 >
                   <div className="border-bottom-1">
-                    <h2 style={{ color: "black", fontWeight: "600" }}>
+                    <h2 style={{ color: "black", fontWeight: "400" }}>
                       Latest Blogs
                     </h2>
                   </div>
@@ -125,12 +126,12 @@ const BlogHome = () => {
                         );
                       }}
                     >
-                      <p>
+                      <p style={{ fontWeight: "400" }}>
                         {latestBlog.postedDate
                           ? latestBlog.postedDate
                           : latestBlog.data.postedDate}
                       </p>
-                      <h4 style={{ color: "black" }}>
+                      <h4 style={{ color: "black" ,fontWeight: "400"}}>
                         {latestBlog.blogHeading
                           ? latestBlog.blogHeading
                           : latestBlog.data.blogHeading}
@@ -147,7 +148,7 @@ const BlogHome = () => {
               >
                 {otherBlogData && (
                   <div className="border-bottom-1">
-                    <h2 style={{ color: "black", fontWeight: "600" }}>
+                    <h2 style={{ color: "black", fontWeight: "400" }}>
                       Previous Blogs
                     </h2>
                   </div>
@@ -162,14 +163,14 @@ const BlogHome = () => {
                           key={index}
                           onClick={() => getSingleBlogdata(item.blog_id)}
                         >
-                          <p>{item.date}</p>
-                          <h4 style={{ color: "black" }}>{item.blogHeading}</h4>
+                           <p style={{ fontWeight: "400" }}>{item.date}</p>
+                          <h4 style={{ color: "black" , fontWeight:"400" }}>{item.blogHeading}</h4>
                         </div>
                       );
                     })
                   ) : (
                     <div className="d-flex justify-content-center align-items-center">
-                      <p>No Data</p>
+                    <p style={{ fontWeight: "400" }}>No Data</p>
                     </div>
                   )}
                 </div>
@@ -179,7 +180,7 @@ const BlogHome = () => {
         </div>
       ) : (
         <div className="d-flex justify-content-center align-items-center m-4">
-          <p>No Data</p>
+        <p style={{ fontWeight: "400" }}>No Data</p>
         </div>
       )}
     </>

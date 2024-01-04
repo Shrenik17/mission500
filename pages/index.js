@@ -38,7 +38,13 @@ const HomePage = () => {
           ></iframe>
         </div>
         <div className="container" style={{ maxWidth: "1200px" }}>
-          <p style={{color: "#818181"}}>
+          <p style={{
+                border: "1px solid #ccc",
+                padding: "15px",
+                margin: "10px",
+                borderRadius: "10px",
+                color: "#818181"
+              }}>
             This is a small documentary on mission 500’s work. The voiceover
             for the documentary is given by Shri Amitabh Bachchan. Mission 500’s
             Paach Patil team acknowledges his contribution in the expansion of
@@ -46,7 +52,7 @@ const HomePage = () => {
           </p>
         </div>
         <div className="entry-video-text">
-          <h2 className="entry__title text-center p-4">
+          <h2 style={{fontWeight:"400"}} className="entry__title text-center p-4">
             Let’s bring prosperity together!
           </h2>
         </div>

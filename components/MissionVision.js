@@ -13,7 +13,7 @@ const MissionVisionGoal = () => {
               >
                 <i class="fa fa-eye" aria-hidden="true"></i>
               </div>
-              <h3 style={{ fontWeight: "600", fontSize: "30px" }}>
+              <h3 style={{ fontWeight: "400", fontSize: "30px" }}>
                 Our Vision
               </h3>
             </div>
@@ -51,7 +51,7 @@ const MissionVisionGoal = () => {
               >
                 <i class="fa fa-bullseye" aria-hidden="true"></i>
               </div>
-              <h3 style={{ fontWeight: "600", fontSize: "30px" }}>
+              <h3 style={{ fontWeight: "400", fontSize: "30px" }}>
                 Our Mission
               </h3>
             </div>
@@ -82,7 +82,7 @@ const MissionVisionGoal = () => {
               >
                 <i class="fa fa-bullseye" aria-hidden="true"></i>
               </div>
-              <h3 style={{ fontWeight: "600", fontSize: "30px" }}>Our Goals</h3>
+              <h3 style={{ fontWeight: "400", fontSize: "30px" }}>Our Goals</h3>
             </div>
             <div style={{ marginLeft: "4rem" }}>
               <ul
@@ -117,7 +117,7 @@ const MissionVisionGoal = () => {
                   </li>
                 </p>
                 <p>
-                  <li style={{ fontSize: "22px", lineHeight: "32px" }}>
+                  <li style={{ fontSize: "17px", lineHeight: "32px" }}>
                     Ensure ecological balance.
                   </li>
                 </p>

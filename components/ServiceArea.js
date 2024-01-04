@@ -26,7 +26,7 @@ const ServiceArea = () => {
                 {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
               </div>
               <h2 className="section__title">
-                We Believe that “Together we can conserve more Water” for our
+                We Believe that Together we can conserve more Water for our
                 sustainable future.
               </h2>
             </div>
@@ -124,7 +124,7 @@ const ServiceArea = () => {
                 <h6
                   style={{
                     color: "#007bff",
-                    fontWeight: 600,
+                    fontWeight: 449,
                     fontSize: "20px",
                     textAlign: "justify", 
                   }}

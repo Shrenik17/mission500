@@ -485,6 +485,21 @@ footer p a:hover {
     margin-left: -1600px;
   }
 }
+/* .sidenav__item {
+  list-style: none;
+}
+
+.about-us-toggle {
+  display: none;
+}
+
+.side-sub-menu {
+  display: none;
+}
+
+.about-us-toggle:checked + label + .side-sub-menu {
+  display: block;
+} */
 
 @keyframes wave {
   0% {

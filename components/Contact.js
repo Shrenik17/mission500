@@ -1,6 +1,7 @@
 import { baseUrl } from "@/constants";
 import React, { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -38,14 +39,23 @@ const Contact = () => {
       });
       console.log(response);
       if (response.status === 400) {
-        alert("Form submitted successfully!");
+        toast.success("Form submitted successfully!", {
+          position: "top-right",
+          autoClose: 1000,
+        });
         resetFormData();
       } else {
-        alert("Form submission failed.");
+        toast.error("Form submission failed", {
+          position: "top-right",
+          autoClose: 1000,
+        });
       }
     } catch (error) {
-      console.error("Error submitting form: ", error);
-      alert("An error occurred while submitting the form.");
+      console.error("An error occurred while submitting the form", error);
+      toast.error("error", {
+        position: "top-right",
+        autoClose: 1000,
+      });
     }
   };
 
@@ -88,6 +98,9 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div>
+          <ToastContainer/>
           </div>
           <div className="col-lg-6">
             <div className="form-shared">

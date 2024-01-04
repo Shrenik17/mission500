@@ -80,6 +80,7 @@ class EntryArea extends Component {
                       <h4 className="entry__title">
                         Let’s bring prosperity together.
                       </h4>
+                      
                       <p className="entry__text">
                         Watch us how we plan to save water!
                       </p>

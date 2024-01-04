@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { Component } from "react";
-
+import Tooltip from '@mui/material/Tooltip';
 class Footer extends Component {
   constructor() {
     super();
@@ -170,10 +170,18 @@ class Footer extends Component {
                         info@mission500mh.com
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="tel:+91-9763469063">
                         Shekhar Nimbalkar (9763469063)
                       </Link>
+                    </li> */}
+                    <li>
+       
+                    <Tooltip title={<span style={{ fontSize: '16px'}}>Shekhar Nimbalkar</span>} placement="right">
+                    <Link href="tel:+91-9763469063">
+                    +91-9763469063
+                      </Link>              
+                    </Tooltip>
                     </li>
                   </ul>
                   <div className="footer__social">
@@ -185,7 +193,11 @@ class Footer extends Component {
                           rel="noopener noreferrer"
                         >
                           {/* <i className="fa fa-twitter"></i> */}
-                          <img style={{height:"15px"}} src="/images/twitter_logo.png" alt="twitter logo" />
+                          <img
+                            style={{ height: "15px" }}
+                            src="/images/twitter_logo.png"
+                            alt="twitter logo"
+                          />
                         </Link>
                       </li>
                       <li>

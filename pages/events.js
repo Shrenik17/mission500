@@ -142,7 +142,7 @@ const Events = () => {
                             ></img>
                           </Link>
                           <div className="card-body">
-                            <h5>{event.title}</h5>
+                            <h5 style={{fontWeight:400}}>{event.title}</h5>
                             {expanded ? (
                               <p>{event.shortDesc}</p>
                             ) : (

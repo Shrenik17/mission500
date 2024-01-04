@@ -175,7 +175,7 @@ const SummeryTable = () => {
                     <h6
                       style={{
                         color: "#007bff",
-                        fontWeight: 600,
+                        fontWeight: 400,
                         fontSize: "20px",
                       }}
                     >

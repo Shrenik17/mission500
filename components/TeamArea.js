@@ -50,9 +50,9 @@ const TeamArea = () => {
                       alt="team image"
                     />
                   </div>
-                  <div className="team__title">
-                    <h3 className="team__title-title">
-                      <Link href="#">{item.memberName}</Link>
+                  <div style={{width:"300px"}} className="team__title">
+                    <h3 style={{color:"white"}} className="team__title-title">
+                      {item.memberName}
                     </h3>
                     <p style={{ color: "white", fontSize: "12px" }}>
                       {item.memberProfession}
@@ -79,12 +79,12 @@ const TeamArea = () => {
                     />
                   </div>
                   <div className="team__title">
-                    <h3 className="team__title-title">
-                      <Link style={{ margin: "0 10px" }} href="#">
+                    <h3  style={{color:"white"}} className="team__title-title">
+                   
                         {item.memberName}
-                      </Link>
+                     
                     </h3>
-                    <p style={{ color: "white", fontSize: "12px" }}>
+                    <p style={{ color: "white", fontSize: "11px" }}>
                       {item.memberProfession}
                     </p>
                   </div>

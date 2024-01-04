@@ -59,7 +59,7 @@ const AboutUs = () => {
         {aboutDetails.map((item, index) => {
           return (
             <div key={index}>
-              <h4 style={{ padding: "2rem 0", fontWeight: "500" }}>
+              <h4 style={{ padding: "2rem 0", fontWeight: "400" }}>
                 {item.title}
               </h4>
               <p style={{ fontSize: "17px", lineHeight: "32px" }}>

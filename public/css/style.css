@@ -90,7 +90,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("../fonts/Bookman\ Old\ Style\ Regular.ttf");
 body {
-  font-family: "Bookman Old Style";
+  font-family: "Bookman Old Style" ;
   font-size: 17px;
   line-height: 26px;
   color: #818181;
@@ -107,6 +107,8 @@ h6 {
   margin: 0;
   color: #007bff;
   font-family: "Bookman Old Style";
+  font-size: 400;
+ 
 }
 p {
   margin: 0;
@@ -184,9 +186,9 @@ a:hover {
 }
 /*=== section-heading ====*/
 .section-heading .section__title {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 400;
 }
 .section-heading .section__meta {
   color: #863bae;
@@ -623,7 +625,7 @@ a:hover {
   color: #818181;
   text-transform: capitalize;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   display: block;
   margin: 0 22px;
   padding-bottom: 17px;
@@ -967,7 +969,7 @@ a:hover {
   color: #fff;
   display: block;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
   padding: 10px 20px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -2262,8 +2264,8 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 .mixer-area:after {
   position: absolute;
@@ -2460,7 +2462,7 @@ a:hover {
   font-size: 12px;
   background-color: #249bc4;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   width: 50px;
   height: 60px;
   cursor: pointer;
@@ -3484,7 +3486,7 @@ a:hover {
 }
 .sidebar-shared .side-widget .widget__title {
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 25px;
 }
 .sidebar-shared .side-widget .author-box {
@@ -3504,18 +3506,18 @@ a:hover {
 .sidebar-shared .side-widget .author-box .author__detail .author__meta {
   font-size: 12px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.1px;
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__meta2 {
   color: #249bc4;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 22px;
   font-family: "Bookman Old Style";
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 14px;
 }
 .sidebar-shared .side-widget .author-box .author__detail .author__title2 {
@@ -3595,7 +3597,7 @@ a:hover {
   text-transform: uppercase;
   background: #fff;
   color: #818181;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   line-height: 35px;
   padding: 0 10px 0 18px;
@@ -3920,7 +3922,7 @@ a:hover {
   text-transform: uppercase;
   background-color: #e36955;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 1px;
   padding: 10px 13px 10px 24px;
   text-align: center;
@@ -3970,7 +3972,7 @@ a:hover {
 }
 /*=== event-detail-content ===*/
 .event-detail-area .event-detail-content .event__title {
-  font-weight: 800;
+  font-weight: 400;
   font-size: 36px;
   margin-bottom: 35px;
 }
@@ -3980,7 +3982,7 @@ a:hover {
 }
 .event-detail-area .event-detail-content .event__title2 {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .event-detail-area .event-detail-content .event-detail-btn {
   margin-top: 50px;
@@ -4001,7 +4003,7 @@ a:hover {
   text-transform: capitalize;
   background: #fff;
   color: #424242;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0 30px 0 35px;
   line-height: 49px;
   position: relative;
@@ -4034,7 +4036,7 @@ a:hover {
 }
 .event-detail-area .event-detail-sidebar .event-detail-item .event__list li {
   color: #e36955;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   position: relative;
   margin-bottom: 20px;
@@ -5098,7 +5100,7 @@ a:hover {
 .team-area .team-content-wrap .team-item .team__title .team__title-title {
   font-size: 20px;
   text-transform: capitalize;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 2px;
 }
 .team-area .team-content-wrap .team-item .team__title .team__title-title a {
@@ -6262,7 +6264,7 @@ a:hover {
 .footer-area .footer-widget-wrap .footer-item .widget__title {
   font-size: 24px;
   color: #fff;
-  font-weight: 800;
+  font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 23px;
 }
@@ -6937,4 +6939,37 @@ canvas {
   image-rendering: -o-crisp-edges;            /* OS X & Windows Opera (12.02+) */
   image-rendering: pixelated;                 /* Chrome                        */
   -ms-interpolation-mode: nearest-neighbor;   /* IE                            */
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: visible;
+  width: 120px;
+  background-color: #f90808;
+  color: #ffffff; 
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 10;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 5;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 2;
+}
+.tooltip .name {
+  color: #e80b0b; /* Color for the name */
+  font-weight: bold; /* Make the name bold, adjust as needed */
 }
