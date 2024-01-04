@@ -49,7 +49,7 @@ const MissionVisionGoal = () => {
                 className="px-3"
                 style={{ fontSize: "28px", alignSelf: "center" }}
               >
-                <i class="fa fa-bullseye" aria-hidden="true"></i>
+                <i class="fa fa-crosshairs" aria-hidden="true"></i>
               </div>
               <h3 style={{ fontWeight: "400", fontSize: "30px" }}>
                 Our Mission

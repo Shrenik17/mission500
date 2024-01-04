@@ -2,6 +2,7 @@ import { baseUrl } from "@/constants";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -77,9 +78,21 @@ const Contact = () => {
               </p>
               <ul className="section__list">
                 <li>
-                  <a href="https://twitter.com/mission500mh">
+                  {/* <a href="https://twitter.com/mission500mh">
                     <i className="fa fa-twitter"></i>
-                  </a>
+                  </a> */}
+                  <Link
+                          href="https://twitter.com/mission500mh"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {/* <i className="fa fa-twitter"></i> */}
+                          <img
+                            style={{ height: "15px" }}
+                            src="/images/twitter_logo.png"
+                            alt="twitter logo"
+                          />
+                        </Link>
                 </li>
                 <li>
                   <a href="https://www.facebook.com/mission500mh">

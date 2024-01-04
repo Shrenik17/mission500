@@ -16,7 +16,7 @@ const OurTeam = () => {
             Mission 500: A Team of Water Warriors In a world plagued by water
             scarcity and environmental challenges, a dedicated group of
             individuals came together in 2017 in Chalisgaon Taluka of Jalgaon
-            district of Maharashtra, to form "Mission 500," a remarkable water
+            district of Maharashtra, to form "Mission 500" a remarkable water
             conservation movement with the audacious goal of creating 500
             million liters of water storage. This team of water warriors is on a
             mission to inspire change, promote sustainable practices, and raise
