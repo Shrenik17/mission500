@@ -44,7 +44,7 @@ class NavOne extends Component {
     //Mobile Menu
     this.mobileMenu();
   }
-  
+
   handleScroll = () => {
     if (window.scrollY > 100) {
       this.setState({
@@ -77,7 +77,7 @@ class NavOne extends Component {
     const navigationItems = [
       {
         text: "About",
-        path: "/about",
+        path: "",
         submenu: [
           { text: "Our Philosophy", path: "/about" },
           {
@@ -91,7 +91,7 @@ class NavOne extends Component {
       },
       {
         text: "Projects",
-        path: "/projects/WaterConservation",
+        path: "",
         submenu: [
           { text: "Water Conservation", path: "/projects/WaterConservation" },
           { text: "Education", path: "/projects/Education" },
@@ -115,7 +115,7 @@ class NavOne extends Component {
                     <div className="info-box info-box-1 d-flex align-items-center">
                       <p
                         className="slider__meta "
-                        style={{ fontSize: "15px", color: "white" }}
+                        style={{ fontSize: "15px", color: "black" }}
                       >
                         Mission 500 - Transforming Maharashtra's Water Landscape
                       </p>
@@ -236,7 +236,7 @@ class NavOne extends Component {
                             {navigationItems.map((item, index) => (
                               <li key={index}>
                                 <Link
-                                  href={item.path}
+                                  href={item.path ? item.path : ""}
                                   onClick={() => this.handleLinkClick(index)}
                                   className={
                                     index === this.state.activeLink
@@ -294,55 +294,42 @@ class NavOne extends Component {
             </div>
             <div className="side-menu-wrap">
               <ul className="side-menu-ul">
-                <li className="sidenav__item">
-                  <Link href="/about">About</Link>
-                  <ul className="side-sub-menu">
-                    
-                  </ul>
-                </li>
-                <li className="sidenav__item">
-                  <Link href="/projects/WaterConservation">Projects</Link>
-                  {/* <ul className="side-sub-menu">
-                    <li>
-                      <Link href="/projects/WaterConservation">
-                        <p style={{ color: "#00ffcb", fontSize: "10px" }}>
-                          water conservation
-                        </p>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/projects/Education">
-                        <p style={{ color: "#00ffcb", fontSize: "10px" }}>
-                          Education
-                        </p>
-                      </Link>
-                      </li>
-                      <li>
-                      <Link href="/projects/Employment">
-                        <p style={{ color: "#00ffcb", fontSize: "10px" }}>
-                          Employment
-                        </p>
-                      </Link>
-                      </li>
-                      <li>
-                      <Link href="/projects/TreePlantation">
-                        <p style={{ color: "#00ffcb", fontSize: "10px" }}>
-                          Tree Plantation
-                        </p>
-                      </Link>
-                    </li>
-                  </ul> */}
-                </li>
-                <li className="sidenav__item">
-                  <Link href="/events">Media</Link>
-                </li>
-                <li className="sidenav__item">
-                  <Link href="/blogs">Blogs</Link>
-                </li>
-                <li className="sidenav__item">
-                  <Link href="/contact">Contact Us </Link>
-                </li>
+                {navigationItems.map((item, index) => (
+                  <li key={index} className="sidenav__item">
+                    <Link
+                      href={item.path}
+                      onClick={() => this.handleLinkClick(index)}
+                      className={
+                        index === this.state.activeLink ? "active_link" : ""
+                      }
+                    >
+                      <p
+                        style={{ fontSize: "19px", color: "white" }}
+                        className={
+                          index === this.state.activeLink ? "active_link" : ""
+                        }
+                      >
+                        {item.text}
+                      </p>
+                    </Link>
+                    {item.submenu && index === this.state.activeLink && (
+                      <ul className="submenu" style={{ paddingLeft: "15px" }}>
+                        {item.submenu.map((subitem, subindex) => (
+                          <li key={subindex} style={{ width: "max-content" }}>
+                            <Link
+                              href={subitem.path}
+                              onClick={(e) => this.handleSubitemClick(e, index)}
+                            >
+                              <p style={{ color: "white", fontSize:"12px" }}>{subitem.text}</p>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
               </ul>
+
               <ul className="side-social">
                 <li>
                   <Link
@@ -354,18 +341,18 @@ class NavOne extends Component {
                   </Link>
                 </li>
                 <li>
-                <Link
-                          href="https://twitter.com/mission500mh"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {/* <i className="fa fa-twitter"></i> */}
-                          <img
-                            style={{ height: "15px" }}
-                            src="/images/twitter_logo.png"
-                            alt="twitter logo"
-                          />
-                        </Link>
+                  <Link
+                    href="https://twitter.com/mission500mh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {/* <i className="fa fa-twitter"></i> */}
+                    <img
+                      style={{ height: "15px" }}
+                      src="/images/twitter_logo.png"
+                      alt="twitter logo"
+                    />
+                  </Link>
                 </li>
                 <li>
                   <Link

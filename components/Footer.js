@@ -82,7 +82,7 @@ class Footer extends Component {
             <div className="container">
               <div className="row footer-widget-wrap">
                 <div className="col footer-item footer-item1">
-                  <h3 className="widget__title">about</h3>
+                  <h3  style={{fontWeight:"400"}} className="widget__title">about</h3>
                   <ul className="foot__links">
                     <li>
                       <Link href="/about">Our Philosophy</Link>
@@ -114,7 +114,7 @@ class Footer extends Component {
                   </ul>
                 </div>
                 <div className="col footer-item footer-item2">
-                  <h3 className="widget__title">explore</h3>
+                  <h3  style={{fontWeight:"400"}} className="widget__title">explore</h3>
                   <ul className="foot__links">
                     <li>
                       <a
@@ -154,7 +154,7 @@ class Footer extends Component {
                                     </ul>
                                 </div> */}
                 <div className="col footer-item footer-item4">
-                  <h3 className="widget__title">contact Us</h3>
+                  <h3  style={{fontWeight:"400"}} className="widget__title">contact Us</h3>
                   <ul className="contact__info">
                     {/* <li>Address to be written here!</li> */}
                     <li

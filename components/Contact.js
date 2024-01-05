@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="section-heading">
-              <h2 className="section__title">Get in Touch With Us</h2>
+              <h2  style={{fontWeight:"400"}} className="section__title">Get in Touch With Us</h2>
               <p className="section__desc">
                 Are you ready to make a splash for change?
                 <br /> <br /> Join us in our Water Conservation Mission and be a

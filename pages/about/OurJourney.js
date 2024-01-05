@@ -52,7 +52,7 @@ const OurJourney = () => {
           
             <div className="d-flex">
               <div>
-                <h3>Milestone's</h3>
+                <h3 style={{fontWeight:"400"}}>Milestone's</h3>
                 <div
                   className="p-4 ml-3"
                   style={{
@@ -85,10 +85,10 @@ const OurJourney = () => {
                     <div class="card" style={{ width: "18rem;" }}>
                       <div class="card-body">
                         <div className="d-flex justify-content-between">
-                          <h5 class="card-title">{milestone.name}</h5>
-                          <p
+                          <h5 style={{fontWeight:"400"}} class="card-title">{milestone.name}</h5>
+                          <p 
                             onClick={() =>{ setMilestone({}); setSelectedItem(null)}}
-                            style={{ cursor: "pointer" }}
+                            style={{ cursor: "pointer" ,fontWeight:"400"}}
                           >
                             <svg
                               viewBox="0 0 24 24"
@@ -106,7 +106,7 @@ const OurJourney = () => {
                             </svg>
                           </p>
                         </div>
-                        <p class="card-text">{milestone.content}</p>
+                        <p  style={{fontWeight:"400"}} class="card-text">{milestone.content}</p>
                       </div>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const OurJourney = () => {
           <section className="section-timeline">
             <div style={{position: "relative",  left: "21%"}} className="d-flex justify-content-start my-3">
           
-              <h3 >Achievements</h3>
+              <h3 style={{fontWeight:"400"}} >Achievements</h3>
             </div>
             <div
               id="horizontal-timeline"
@@ -274,3 +274,6 @@ const OurJourney = () => {
 };
 
 export default OurJourney;
+
+
+

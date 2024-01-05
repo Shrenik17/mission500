@@ -42,7 +42,7 @@ const ClientsLogo = () => {
               <div className="section-icon">
                 {/* <img src="/images/section-icon.png" alt="section-icon" /> */}
               </div>
-              <h2 className="section__title">Partners</h2>
+              <h2  style={{fontWeight:"400"}} className="section__title">Partners</h2>
             </div>
           </div>
         </div>
