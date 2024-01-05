@@ -143,9 +143,10 @@ const Health = () => {
                                                 {/* <img src="../../public/images/close.png" alt="close icon" /> */}
                                               </button>
                                               {openTooltip && (
-                                                <span className="tooltip-content">
-                                                  {project.shortDesc}
-                                                </span>
+                                                
+                                                <div className="tooltip-content mt-3">
+                                                 {project.shortDesc}
+                                                </div>
                                               )}
                                               {/* {project.shortDesc} */}
                                             </span>

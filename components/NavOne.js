@@ -143,7 +143,11 @@ class NavOne extends Component {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <i className="fa fa-twitter"></i>
+                            <img
+                              style={{ height: "11px" }}
+                              src="/images/twitter_logo.png"
+                              alt="twitter logo"
+                            />
                           </Link>
                         </li>
                         <li>
@@ -320,7 +324,9 @@ class NavOne extends Component {
                               href={subitem.path}
                               onClick={(e) => this.handleSubitemClick(e, index)}
                             >
-                              <p style={{ color: "white", fontSize:"12px" }}>{subitem.text}</p>
+                              <p style={{ color: "white", fontSize: "12px" }}>
+                                {subitem.text}
+                              </p>
                             </Link>
                           </li>
                         ))}

@@ -108,7 +108,7 @@ const BlogHome = () => {
               {flag ? (
                 <div
                   className="d-flex flex-column py-4 px-1"
-                  style={{ position: "sticky", top: "0" }}
+                  style={{ top: "0" }}
                 >
                   <div className="border-bottom-1">
                     <h2 style={{ color: "black", fontWeight: "400" }}>
