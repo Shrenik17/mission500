@@ -44,7 +44,9 @@ class NavOne extends Component {
     //Mobile Menu
     this.mobileMenu();
   }
-
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleZoomChange);
+  }
   handleScroll = () => {
     if (window.scrollY > 100) {
       this.setState({
@@ -56,6 +58,7 @@ class NavOne extends Component {
       });
     }
   };
+
 
   mobileMenu = () => {
     //Mobile Menu Toggle
@@ -114,8 +117,8 @@ class NavOne extends Component {
                   <div className="top-action-content">
                     <div className="info-box info-box-1 d-flex align-items-center">
                       <p
-                        className="slider__meta "
-                        style={{ fontSize: "15px", color: "black" }}
+                        className="meta"
+                        style={{ fontSize: "15px" }}
                       >
                         Mission 500 - Transforming Maharashtra's Water Landscape
                       </p>

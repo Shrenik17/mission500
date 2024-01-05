@@ -1424,7 +1424,7 @@ a:hover {
 }
 
 /*=== slider-heading ===*/
-.slider-area .slider-heading .slider__meta {
+.slider-area .slider-heading {
   font-size: 20px;
   color: #fff;
   text-transform: uppercase;
@@ -1439,7 +1439,18 @@ a:hover {
   font-weight: 900;
   margin-bottom: 47px;
 }
-/*=== owl-nav ===*/
+
+.meta {
+  color:white;
+}
+
+
+@media screen and (max-width: 991px) {
+  .meta {
+      color: black; 
+  }
+}
+/*=== owl-nav ===*/ 
 .slider-area .homepage-slide1 .owl-dots {
   position: absolute;
   top: 50%;
