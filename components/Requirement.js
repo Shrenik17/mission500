@@ -15,8 +15,9 @@ const Requirement = () => {
   }, []);
 
   return (
-    <div className="container_map">
-      <div className={`selector ${isOpen ? "open" : ""}`}>
+    <div className="container">
+      <div className={`selector ${isOpen ? "open" : ""}`}> 
+      {/* expressions inside strings. */}
         <ul>
           <li>
             <input id="1" type="checkbox" />

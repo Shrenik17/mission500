@@ -97,13 +97,13 @@ const TreePlantation = () => {
                             className="card card_image"
                             style={{ width: "18rem" }}
                           >
-                            <Link href={project.projectLink} target="_blank">
+                           
                               <img
                                 src={project.imagePath}
                                 className="card-img-top"
                                 alt="..."
                               />
-                            </Link>
+                           
 
                             <div className="card-body">
                               <h5 style={{fontWeight:400}}>{project.title}</h5>

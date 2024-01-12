@@ -18,13 +18,22 @@ const SummeryTable = () => {
   const handleYearClick = (year) => {
     setSelectedYear(year);
 
-    // setSelectedItem(year);
   };
 
-  const scrollToMaps = () => {
+  // const scrollToMaps = () => {
+  //   const element = document.getElementById("maps");
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
+  const scrollToMaps = (scrollAmount = 0) => {
     const element = document.getElementById("maps");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const currentPosition = element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: currentPosition + scrollAmount,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -41,8 +50,7 @@ const SummeryTable = () => {
         return "https://mission500mh.com/2020-21-Projects";
       case 2023:
         return "https://mission500mh.com/projects?district=all_districts";
-      default:
-        return "#";
+      
     }
   };
 
@@ -170,7 +178,7 @@ const SummeryTable = () => {
                 </th>
               ))}
             </tr> */}
-                <tr>
+                <tr >
                   <th>
                     <h6
                       style={{
@@ -184,7 +192,7 @@ const SummeryTable = () => {
                   </th>
                   {data.map((item, index) => (
                     <th
-                      key={index}
+                      key={index} id="maps"
                       style={{
                         textAlign: "center",
                         verticalAlign: "middle",
@@ -193,7 +201,7 @@ const SummeryTable = () => {
                       onClick={() => {
                         handleYearClick(item.YEAR);
                         setSelectedItem(item.YEAR);
-                        scrollToMaps();
+                        scrollToMaps(400);
                       }}
                     >
                       <a
@@ -203,7 +211,7 @@ const SummeryTable = () => {
                         rel="noopener noreferrer"
                         style={{ cursor: "pointer" }}
                       >
-                        {item.YEAR}
+                       <h6>{item.YEAR}</h6> 
                       </a>
                     </th>
                   ))}
@@ -336,8 +344,10 @@ const SummeryTable = () => {
               style={{
                 border: "2px solid grey",
                 borderRadius: "12px",
-                height: "fit-content",
-                marginTop: "-145px",
+                height: "275px",
+                lineHeight: "34px",
+                width:"146px"
+               
               }}
             >
               {data.map((item, index) => (

@@ -12,6 +12,7 @@ const LineChart = ({ data }) => {
   const excludedFields = ["SR_NO", "YEAR","RESERVOIR_CREATED_IN_LITRE"];
   const generateChartData = (field) => {
     
+    // user-friendly titles
     const fieldTitles = {
      
       NUMBER_OF_VILLAGES: "Villages Count",
@@ -21,9 +22,11 @@ const LineChart = ({ data }) => {
       RESERVOIR_CREATED_IN_CRORE_LITRE: "Reservoir (Cr. Ltr)",
       
     };
+
+  //generate an object with labels and datasets
     return {
-      labels: chartData.map((entry) => entry.YEAR.toString()),
-      datasets: [
+      labels: chartData.map((entry) => entry.YEAR.toString()), // array of labels for the X-axis
+      datasets: [                                               //array of object representing the data to be displayed
         {
           label: fieldTitles[field] || field,
           borderColor: "orange",
@@ -47,11 +50,6 @@ const LineChart = ({ data }) => {
           ticks: {
             beginAtZero: true,
           },
-        },
-      ],
-      y: [
-        {
-          display: false,
         },
       ],
     },
@@ -91,7 +89,7 @@ const LineChart = ({ data }) => {
                 // padding: "10px",
                 }}>
           
-            <Line  data={generateChartData(field)} options={options} />
+            <Line data={generateChartData(field)} options={options} />
             <hr />
           </div>
         ))}

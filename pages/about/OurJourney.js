@@ -49,10 +49,9 @@ const OurJourney = () => {
       <div className="mb-5">
         <div className="d-flex flex-column m-4">
           <div className="d-flex justify-content-around">
-          
             <div className="d-flex">
               <div>
-                <h3 style={{fontWeight:"400"}}>Milestone's</h3>
+                <h3 style={{ fontWeight: "400" }}>Milestone's</h3>
                 <div
                   className="p-4 ml-3"
                   style={{
@@ -85,10 +84,15 @@ const OurJourney = () => {
                     <div class="card" style={{ width: "18rem;" }}>
                       <div class="card-body">
                         <div className="d-flex justify-content-between">
-                          <h5 style={{fontWeight:"400"}} class="card-title">{milestone.name}</h5>
-                          <p 
-                            onClick={() =>{ setMilestone({}); setSelectedItem(null)}}
-                            style={{ cursor: "pointer" ,fontWeight:"400"}}
+                          <h5 style={{ fontWeight: "400" }} class="card-title">
+                            {milestone.name}
+                          </h5>
+                          <p
+                            onClick={() => {
+                              setMilestone({});
+                              setSelectedItem(null);
+                            }}
+                            style={{ cursor: "pointer", fontWeight: "400" }}
                           >
                             <svg
                               viewBox="0 0 24 24"
@@ -106,7 +110,9 @@ const OurJourney = () => {
                             </svg>
                           </p>
                         </div>
-                        <p  style={{fontWeight:"400"}} class="card-text">{milestone.content}</p>
+                        <p style={{ fontWeight: "400" }} class="card-text">
+                          {milestone.content}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -274,6 +280,5 @@ const OurJourney = () => {
 };
 
 export default OurJourney;
-
 
 

@@ -12,21 +12,21 @@ const Education = () => {
   const [selectedYear, setSelectedYear] = useState(null);
   const [expanded, setExpanded] = useState(false);
   const [openTooltip, setOpenToolTip] = useState(false);
-  useEffect(() => {
-    const getData = async () => {
-      const response = await getAllProjects();
-      console.log(response);
-      setProjects(response);
+    useEffect(() => {
+      const getData = async () => {
+        const response = await getAllProjects();
+        console.log(response);
+        setProjects(response);
 
-      // Extract unique years with projects of type "Tree Plantation"
-      const uniqueYears = [...new Set(response.filter(project => project.type === "Education").map(project => project.projectYear))];
-      setYears(uniqueYears);
+        // Extract unique years with projects of type "Tree Plantation"
+        const uniqueYears = [...new Set(response.filter(project => project.type === "Education").map(project => project.projectYear))];
+        setYears(uniqueYears);
 
-      // Set the default selected year to the most recent year
-      if (uniqueYears.length > 0) {
-        setSelectedYear(Math.max(...uniqueYears));
-      }
-    };
+        // Set the default selected year to the most recent year
+        if (uniqueYears.length > 0) {
+          setSelectedYear(Math.max(...uniqueYears));
+        }
+      };
 
     getData();
   }, []);
@@ -95,13 +95,13 @@ const Education = () => {
                             className="card card_image"
                             style={{ width: "18rem" }}
                           >
-                            <Link href={project.projectLink} target="_blank">
+                           
                               <img
                                 src={project.imagePath}
                                 className="card-img-top"
                                 alt="..."
                               />
-                            </Link>
+                          
 
                             <div className="card-body">
                               <h5 style={{fontWeight:400}} >{project.title}</h5>

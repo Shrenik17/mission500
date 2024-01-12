@@ -134,13 +134,13 @@ const Events = () => {
                           className="card card_image"
                           style={{ width: "18rem" }}
                         >
-                          <Link href={event.eventNewsLink} target="_blank">
+                         
                             <img
                               src={event.imagePath}
                               className="card-img-top"
                               alt="..."
                             ></img>
-                          </Link>
+                        
                           <div className="card-body">
                             <h5 style={{fontWeight:400}}>{event.title}</h5>
                             {expanded ? (

@@ -6746,8 +6746,8 @@ html {
   margin-bottom: 439PX;
   margin-left: 0px;
 
-  
-  /* @media screen and (max-width: 500pxpx) {
+   
+  @media screen and (max-width: 500px) {
    
     left: 50%;
     top: 50px;
@@ -6755,7 +6755,7 @@ html {
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-  } */
+  } 
 }
 
  .container_map {

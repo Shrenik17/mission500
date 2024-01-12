@@ -104,7 +104,9 @@ class NavOne extends Component {
       },
       { text: "Media", path: "/events" },
       { text: "Blogs", path: "/blogs" },
+      { text: "Reports", path: "/reports" },
       { text: "Contact Us", path: "/contact" },
+ 
       // ... other items
     ];
     return (

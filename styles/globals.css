@@ -89,6 +89,7 @@ body {
 #horizontal-timeline {
   flex-direction: row;
   /* min-width: 1100px; */
+  margin-left: 225px;
 }
 .horizontal .link {
   width: auto;
@@ -536,7 +537,7 @@ footer p a:hover {
 }
 
 .tooltipa {
-  /* visibility: hidden; */
+ 
   width: 400px;
   background-color: antiquewhite;
   color: black;
@@ -546,10 +547,9 @@ footer p a:hover {
   position: absolute;
   z-index: 10;
   top: 20%;
-  /* Adjust the left property to control the distance from the button */
-  left: 125%; /* Use a value greater than 100% to position it to the right */
-  /* opacity: 1; */
-  /* transition: opacity 0.2s; */
+ 
+  left: 125%; 
+
 }
 
 .tooltipa::after {
@@ -562,7 +562,7 @@ footer p a:hover {
   height: 0;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent transparent #333; /* Adjust the color */
+  border-color: transparent transparent transparent #333; 
 }
 .close-button{
   position: absolute;
@@ -643,4 +643,38 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
+ 
 
+/* REPORT TABLE CSS */
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.report-table th, .report-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.report-table th {
+  background-color: #f2f2f2;
+  color: #007bff;
+  text-align: center;
+}
+
+.pdf-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.pdf-button:hover {
+  background-color: #2980b9;
+}
+.report-table th{
+  font-weight: 400;
+}

@@ -83,7 +83,7 @@ const ClientsLogo = () => {
                 <Link href="https://www.credaipune.org/" target="_blank"> */}
                   <div className="client-logo-item">
                     <img
-                      src="/images/credai.jpeg"
+                      src="/images/client_logo07.jpg"
                       width={400}
                       height={130}
                       alt="brand image"
