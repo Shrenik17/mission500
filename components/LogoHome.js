@@ -3,7 +3,7 @@ import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 import { getAllLogoImages } from "@/api/logoAPI";
 import Link from "next/link";
-
+import Tooltip from '@mui/material/Tooltip';
 const LogoHome = () => {
   const [imageData, setImageData] = useState([]);
 
@@ -66,7 +66,7 @@ const LogoHome = () => {
                 {imageData.map((image) => (
                   <Link key={image.id} href={image.logoLink} target="_blank">
                     <div className="client-logo-item">
-                    
+                    <Tooltip title={<span style={{ fontSize: '16px'}}>{image.title}</span>} placement="bottom">
                         <img
                           style={{
                             width: "200px",
@@ -75,7 +75,7 @@ const LogoHome = () => {
                           src={image.imagePath}
                           alt="image"
                         />
-                     
+                             </Tooltip>
                     </div>
                   </Link>
                 ))}
