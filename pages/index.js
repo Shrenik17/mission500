@@ -70,14 +70,11 @@ const HomePage = () => {
 
       <HiwArea />
       <MixerArea />
-      {/* <HelpingArea />
-      <TeamArea /> */}
+   
       {/* <EntryArea /> */}
       {/* <ClientsLogo /> */}
       <LogoHome />
-      {/* <BlogHome /> */}
-      {/*<Map />
-      <CallToActionTwo /> */} 
+
       <Footer />
     </Layout>
   );

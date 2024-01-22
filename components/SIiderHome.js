@@ -62,22 +62,13 @@ const SliderHome = () => {
             <div
               key={image.id}
               className="single-slide-item"
-              style={
-                {
-                  // backgroundSize: "contain",
-                  // backgroundRepeat: "no-repeat",
-                  // backgroundImage: `url(${image.imagePath})`,
-                }
-              }
+            
             >
               <img
                 style={{
-                width: "733px",
-                  height: "398px",            
-                  marginLeft: "23px",
-                  border: "1px solid #ddd", // Add a border for a subtle frame
-                  borderRadius: "6px", // Add rounded corners for a softer look
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                maxWidth: "100%",
+                maxHeight: "100%",
+                
                 }}
                 src={image.imagePath}
                 alt="image"
